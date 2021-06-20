@@ -6,6 +6,7 @@ After=syslog.target
 After=network.target
 
 [Service]
+Environment=MONO_GC_PARAMS="max-heap-size={{ sonarr.max_heap_size }}"
 Type=simple
 User={{ sonarr.user }}
 Group={{ sonarr.user }}

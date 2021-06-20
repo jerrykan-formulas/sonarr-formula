@@ -12,3 +12,5 @@ sonarr:
 
   mono_bin: /usr/bin/mono
   sonarr_bin: /opt/sonarr/Sonarr.exe
+
+  max_heap_size: 120M
