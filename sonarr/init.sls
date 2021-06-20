@@ -29,7 +29,7 @@ sonarr-binary-package:
     - skip_verify: True
 {%- endif %}
     - archive_format: tar
-    - if_missing: {{ sonarr.install_dir }}/NzbDrone.exe
+    - if_missing: {{ sonarr.sonarr_bin }}
     - options: '--strip-components=1'
     - enforce_toplevel: False
     - require:
