@@ -30,12 +30,8 @@ sonarr-binary-package:
 {%- endif %}
     - archive_format: tar
     - if_missing: {{ sonarr.install_dir }}/NzbDrone.exe
-{%- if salt['grains.get']('salversioninfo') < [2016, 11, 0] %}
-    - tar_options: '--strip-components=1'
-{%- else %}
     - options: '--strip-components=1'
     - enforce_toplevel: False
-{%- endif %}
     - require:
       - file: sonarr-install-dir
 
