@@ -4,6 +4,7 @@ sonarr:
     - mono-runtime
     - libmono-cil-dev
     - libmediainfo0v5
+    - ca-certificates-mono
 
   user: sonarr
 
